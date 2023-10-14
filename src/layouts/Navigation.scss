@@ -1,0 +1,71 @@
+@import "../styles/variables";
+
+/*================ navbar section style ======================*/
+
+.nav-bar {
+  width: 100vw;
+  background-color: rgb(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 1.5em 1em;
+  display: flex;
+  align-items: center;
+  position: fixed;
+
+  .container {
+    width: 1200px;
+    margin-inline: auto;
+
+    .nav-bar-content {
+      display: flex;
+      align-items: center;
+
+      .logo {
+        color: white;
+        font-size: 1.4rem;
+        margin-right: 4rem;
+
+        .logo-color {
+          color: $secondary-color;
+        }
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+
+        li {
+          margin-inline: 1em;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: -15%;
+            z-index: -5;
+            height: 10px;
+            width: 0%;
+            border-radius: 0.5rem;
+            background-color: #56ffc8;
+            opacity: 0.5;
+            transition: 500ms;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+
+        }
+    }
+}
+}
+
+// GENERAL STYLE
+a {
+  color: white;
+  text-decoration: none;
+}
+
+}
+
+/*================ end of navbar section style ======================*/
