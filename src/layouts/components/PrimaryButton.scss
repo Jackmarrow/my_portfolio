@@ -1,0 +1,15 @@
+ @import "../../styles/variables";
+
+.primary-btn{
+    background-color: $secondary-color;
+    font-weight: bold;
+    color: white;
+    padding: 1em 2em;
+    border: none;
+    border-radius: .5rem;
+
+    &:hover{
+        cursor: pointer;
+        
+    }
+}

@@ -1,0 +1,52 @@
+@import "../styles/variables";
+
+/*================ Hero section style ======================*/
+
+.hero-section {
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-inline: 1em;
+
+  .container {
+    width: 1200px;
+    margin-inline: auto;
+
+    .about-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      .about-desc {
+        
+        h1 {
+          font-size: 3rem;
+          margin-bottom: 1.5rem;
+
+          .my-name{
+            display: inline-block;
+            position: relative;
+
+            &::after{
+              content:"";
+              position: absolute;
+              top: 80%;
+              left: 0;
+              height: 5px;
+              width: 100%;
+              background-color: $secondary-color;
+            }
+          }
+        }
+
+        p{
+          margin-bottom: 2rem;
+        }
+      }
+
+    }
+  }
+}
+
+/*================ End of hero section style ======================*/
