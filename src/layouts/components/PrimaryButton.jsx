@@ -1,10 +1,10 @@
 import './PrimaryButton.scss';
 
 
-export function PrimaryButton(){
+export function PrimaryButton({content}){
     return(
         <button className="primary-btn" type="button">
-            Contact Me
+            {content}
         </button>
     );
 }

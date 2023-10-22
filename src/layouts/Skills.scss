@@ -1,0 +1,58 @@
+@import "../styles/variables";
+
+/* ================ Skills section style ================== */
+
+.skills {
+    padding-inline: 1em;
+  .container {
+    max-width: 1200px;
+    margin-inline: auto;
+
+    .skills-container{
+        padding: 3em 0;
+
+        h1{
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            color: $subtext-color;
+            width: max-content;
+            position: relative;
+            padding-bottom: .5em;
+            
+            &::after{
+                content:"";
+                position: absolute;
+                top: 80%;
+                left: 0;
+                height: 5px;
+                width: 100%;
+                background-color: $secondary-color;
+              }
+        }
+
+        .grid-system{
+            
+            text-align: center;
+
+            @media(min-width: 426px) {
+                text-align: left;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                row-gap: 2rem;
+            }
+
+            h2{
+                font-size:2.2rem;
+                margin: 1rem 0;
+                
+
+                @media(min-width: 426px) {
+                    margin: 0;
+                }
+            }
+        }
+    }
+  }
+}
+
+/* ================ End of skills section style ================== */
