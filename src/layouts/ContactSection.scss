@@ -1,0 +1,41 @@
+@import "../styles/variables";
+
+.contact-section {
+  padding: 3em 1em;
+  background-color: $light-gray;
+
+  .container {
+    max-width: 1200px;
+    margin-inline: auto;
+
+    .contact-wrapper{
+        text-align: center;
+
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+          }
+
+        .contact-text{
+            flex-basis: 40%;
+            h1 {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                color: $subtext-color;
+              }
+          
+              p{
+                  color: white;
+                  text-align: center;
+                  line-height: 1.8rem;
+                  margin-bottom: 2rem;
+      
+                  @media (min-width: 768px) {
+                      text-align: left;
+                    }
+              }
+        }
+    }
+  }
+}

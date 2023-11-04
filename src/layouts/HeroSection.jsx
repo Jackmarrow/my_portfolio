@@ -6,7 +6,7 @@ import { SecondaryButton } from './components/SecondaryButton';
 
 export function HeroSection(){
     return(
-        <section className="hero-section">
+        <section id='home' className="hero-section">
            <div className="container">
             <div className="about-container">
                 <div className="about-desc">
@@ -14,7 +14,7 @@ export function HeroSection(){
                     <p>I am front-end developer passionate about <br/> building accessible web apps. </p>
                     <div className='btn-group'>
                         <PrimaryButton content={'Contact Me'}/>
-                        <SecondaryButton content={'Download Cv'} />
+                        <SecondaryButton> Download Cv </SecondaryButton>
                     </div>
                 </div>
                 <div>

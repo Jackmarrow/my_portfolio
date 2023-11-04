@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import AnchorLink from "react-anchor-link-smooth-scroll"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 import './Navigation.scss';
@@ -46,11 +47,11 @@ export const Navigation = () =>{
                     </a>
                     </div>
                     <ul ref={navLinkRef}  className='nav-links'>
-                        <li><a href="#skills">Home</a></li>
+                        <li> <AnchorLink href="#home"> Home </AnchorLink></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><AnchorLink href="#skills"> Skills </AnchorLink></li>
+                        <li> <AnchorLink href='#project'> Projects </AnchorLink></li>
+                        <li> <AnchorLink href='#contact'> Contact </AnchorLink></li>
                     </ul>
                     <div className="menu-bar">
                         <FontAwesomeIcon  onClick={showMenuBar} className={ isShow == false ? 'show' : 'hide'}  icon={faBars} style={{color: "#4ee29f",}} size='xl' />

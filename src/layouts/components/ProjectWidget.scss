@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+
+.project-wrapper{
+    margin-bottom: 2rem;
+
+    @media (min-width: 768px) {
+        &{
+            margin-bottom: 0;
+        }
+    }
+
+    .project-image{
+        width: 100%;
+        height: 350px;
+        margin-bottom: 1rem;
+        object-fit: cover;
+    }
+
+    h3{
+        margin-bottom: .5rem;
+    }
+
+    .technology > p{
+        color: $subtext-color;
+        margin-right: 2rem;
+        display: inline-block;
+    }
+}

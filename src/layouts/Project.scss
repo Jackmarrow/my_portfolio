@@ -1,0 +1,36 @@
+@import '../styles/variables';
+.project-section {
+    padding: 3em 1em;
+
+  .container {
+    max-width: 1200px;
+    margin-inline: auto;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      color: $subtext-color;
+      width: max-content;
+      position: relative;
+      padding-bottom: 0.5em;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 80%;
+        left: 0;
+        height: 5px;
+        width: 100%;
+        background-color: $secondary-color;
+      }
+    }
+
+    @media (min-width: 768px) {
+        .project-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5rem;
+        }
+    }
+  }
+}

@@ -1,10 +1,10 @@
 import './SecondaryButton.scss'
 
-export function SecondaryButton({content}){
+export function SecondaryButton({children}){
 
 
 
     return(
-        <button type="button" className="secondary-btn">{content}</button>
+        <button type="button" className="secondary-btn">{children}</button>
     )
 }

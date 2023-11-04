@@ -1,0 +1,49 @@
+@import '../../styles/variables';
+
+.form-container{
+    flex-basis: 40%;
+    input{
+        width: 100%;
+        padding: 1em;
+        margin-bottom: 1rem;
+        background-color: transparent;
+        border: none;
+        border-bottom: .05rem solid $subtext-color;
+        color: $subtext-color;
+        outline: none;
+
+        &:focus{
+            border-bottom: .05rem solid $secondary-color;
+        }
+    }
+
+    textarea{
+        width: 100%;
+        padding: 1em;
+        margin-bottom: 1rem;
+        background-color: transparent;
+        border: none;
+        border-bottom: .05rem solid $subtext-color;
+        color: $subtext-color;
+        outline: none;
+        resize: none;
+        &:focus{
+            border-bottom: .05rem solid $secondary-color;
+        }
+    }
+    .submit-btn{
+        background-color: transparent;
+        font-weight: bold;
+        color: white;
+        padding: 1em 2em;
+        border-radius: .5rem;
+        border: 2px solid $secondary-color;
+
+        &:hover{
+            cursor: pointer;
+            background-color: $secondary-color;
+            color: black;
+            
+        }
+    }
+}
