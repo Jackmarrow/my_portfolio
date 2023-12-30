@@ -16,3 +16,15 @@ h1, h2, h3, h4, h5, h6{
     color: white;
 }
 
+h1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+    @media(min-width: 425px) {
+        font-size: 2rem;
+    }
+
+    @media(min-width: 768px){
+        font-size: 2.7rem;
+    }
+}

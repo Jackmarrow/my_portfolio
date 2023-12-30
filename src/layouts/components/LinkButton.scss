@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.link-btn{
+       background-color: $secondary-color;
+       cursor: pointer;
+       border-radius: .5rem;
+       font-weight: bold;
+       color: black;
+       padding: .8em 1.5em;
+       border: 0;
+}

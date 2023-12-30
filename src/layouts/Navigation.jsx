@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
+
 import './Navigation.scss';
 
 
@@ -48,7 +49,7 @@ export const Navigation = () =>{
                     </div>
                     <ul ref={navLinkRef}  className='nav-links'>
                         <li> <AnchorLink href="#home"> Home </AnchorLink></li>
-                        <li><a href="#">About</a></li>
+                        <li><AnchorLink href="#about">About</AnchorLink> </li>
                         <li><AnchorLink href="#skills"> Skills </AnchorLink></li>
                         <li> <AnchorLink href='#project'> Projects </AnchorLink></li>
                         <li> <AnchorLink href='#contact'> Contact </AnchorLink></li>
