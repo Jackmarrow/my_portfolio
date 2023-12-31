@@ -38,8 +38,7 @@ export function HeroSection() {
             &#128075; Nice to meet you! <br /> I'm Oussama Boussouf
             </h1>
             <p>
-              I am front-end developer passionate about <br /> building
-              accessible web apps.
+              I'm a passionate and aspiring junior web developer <br /> with a strong desire to craft captivating online experiences. 
             </p>
             <div className="btn-group">
               <AnchorLink href="#contact"><PrimaryButton content={"Contact Me"} /></AnchorLink>

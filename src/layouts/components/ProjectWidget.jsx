@@ -1,14 +1,10 @@
 import './ProjectWidget.scss'
 import LinkButton from './LinkButton'
-import gsap from 'gsap'
-import imageProject from '../../assets/images/project_images/project_1.jpg'
-import { useEffect } from 'react'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 export function ProjectWidget({props}){
-
-    useEffect(()=>{
-
-    },[]);
 
     return(
         <div className='project-wrapper'>
@@ -16,15 +12,19 @@ export function ProjectWidget({props}){
                 <img className='project-image' src={props.image} alt="image project" />
                 <div className='overlay'></div>
                 <div className='btn-group'>
-                    <LinkButton>Preview</LinkButton>
-                    <LinkButton>Code</LinkButton>
+                    <a href={props.preview} target='_blank'>
+                        <LinkButton><FontAwesomeIcon icon={faEye} size='xl'/> Preview</LinkButton>
+                    </a>
+                    <a href={props.code} target='_blank'>
+                        <LinkButton> <FontAwesomeIcon icon={faGithub} size='xl'/> Code</LinkButton>
+                    </a>
                 </div>
             </div>
             <h3>{props.title}</h3>
             <div className='technology'>
                 {
-                    props.lang.map( ele =>{
-                        return <p key={ele}>{ele}</p>
+                    props.lang.map( (tech, index) =>{
+                        return <p key={index}>{tech}</p>
                     })
                 }
             </div>

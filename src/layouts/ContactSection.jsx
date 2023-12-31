@@ -10,12 +10,12 @@ export function ContactSection() {
             <div className="contact-text">
               <h1>Contact</h1>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
-                pariatur porro nisi distinctio harum praesentium voluptates
-                veritatis cupiditate omnis perferendis!
+                if you like what you've seen so far and would like to get in
+                touch, talk to me about a collaboration project or just say
+                hello, contact me via this form.
               </p>
             </div>
-            <Form/>
+            <Form />
           </div>
         </div>
       </section>

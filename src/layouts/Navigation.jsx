@@ -44,7 +44,7 @@ export const Navigation = () =>{
                 <div className="nav-bar-content">
                     <div className='logo'>
                     <a href="/">
-                        Portf<span className="logo-color">olio.</span>
+                        <b>Oz<span className="logo-color">ama</span></b>
                     </a>
                     </div>
                     <ul ref={navLinkRef}  className='nav-links'>
