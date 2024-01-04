@@ -10,9 +10,10 @@ export function ContactSection() {
             <div className="contact-text">
               <h1>Contact</h1>
               <p>
-                if you like what you've seen so far and would like to get in
-                touch, talk to me about a collaboration project or just say
-                hello, contact me via this form.
+                I'm excited about the prospect of contributing my skills to a
+                dynamic team. If you're seeking a junior web developer who
+                combines technical prowess with a creative flair, you can contact
+                me via this form.
               </p>
             </div>
             <Form />

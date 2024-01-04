@@ -1,12 +1,12 @@
 import "./Project.scss";
 import { ProjectWidget } from "./components/ProjectWidget";
-import ImageProjectOne from "../assets/images/project_images/LGMS-1.png";
+import ImageProjectOne from "../assets/images/project_images/lionsgeek.jpg";
 import ImageProjectTwo from "../assets/images/project_images/E-commerce.png";
 
 export function Project() {
   const projects = [
     {
-        preview: '',
+        preview: 'http://mylionsgeek.ma',
         code:'https://github.com/saidlionsgeeek/lionsgeek_management',
         title:"LIONSGEEK MANAGEMENT",
         lang: ["Laravel", "MySQL", "Tailwind"],

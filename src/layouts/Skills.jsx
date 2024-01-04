@@ -5,37 +5,23 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+const skills = [
+  "HTML",
+  "CSS",
+  "SASS",
+  "BOOTSTRAP",
+  "TAILWIND",
+  "JAVASCRIPT",
+  "REACT",
+  "LARAVEL",
+  "MYSQL",
+  "GIT",
+  "GITHUB",
+];
+
 export function Skills() {
 
   const languages = useRef(null);
-
-  const skills = [
-    "HTML",
-    "CSS",
-    "SASS",
-    "BOOTSTRAP",
-    "TAILWIND",
-    "JAVASCRIPT",
-    "REACT",
-    "LARAVEL",
-    "MYSQL",
-    "GIT",
-    "GITHUB",
-  ];
-
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver((entries)=>{
-  //     if(entries[0].isIntersecting){
-  //       console.log('yes');
-  //       gsap.from('.text', {stagger: 0.4,duration: 1 , opacity: 0, x: -100})
-  //     } else{
-  //       console.log('no');
-  //     }
-
-
-  //   });
-  //   observer.observe(languages.current);
-  // }, []);
 
   useEffect(()=>{
     let ctx = gsap.context(()=>{

@@ -18,7 +18,6 @@ export function HeroSection() {
     let ctx = gsap.context(()=>{
         gsap.from(".about-desc", { opacity: 0, x: -100, duration: 2 });
         gsap.from(".profile-image", {opacity:0, y: -100, duration: 2, delay: .5 });
-        // gsap.from(".my-name", {'--slide-width': 0, duration: 0.8, delay: 1});
     }, parentContainer);
 
     return () => ctx.revert();
@@ -38,7 +37,7 @@ export function HeroSection() {
             &#128075; Nice to meet you! <br /> I'm Oussama Boussouf
             </h1>
             <p>
-              I'm a passionate and aspiring junior web developer <br /> with a strong desire to craft captivating online experiences. 
+              I'm a passionate and aspiring junior web developer <br /> with a mission to bring creativity and functionality to the digital realm. 
             </p>
             <div className="btn-group">
               <AnchorLink href="#contact"><PrimaryButton content={"Contact Me"} /></AnchorLink>
